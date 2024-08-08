@@ -1,0 +1,23 @@
+<div
+  class="bg-blue-500 rounded-lg hover:bg-blue-700 flex justify-between items-center space-x-10 p-3 w-full"
+>
+  <div class="flex justify-center items-center space-x-16 pl-10 md:space-x-10">
+    <img
+      class="w-20 h-20 rounded-full ring-2 ring-white dark:ring-white"
+      [src]="user.avatar"
+      alt="Bordered avatar"
+    />
+    <p class="text-white md:text-lg font-serif">
+      {{ user.first_name }} {{ user.last_name }}
+    </p>
+  </div>
+  <div class="pl-12">
+    <button
+      routerLink="/users/{{ user.id }}"
+      type="button"
+      class="lg:py-2.5 px-16 me-2 mb-2 text-sm font-serif text-blue-700 focus:outline-none bg-white rounded-lg border border-gray-200 focus:z-10 focus:ring-3 focus:ring-blue-50 dark:focus:ring-blue-50"
+    >
+      See Details
+    </button>
+  </div>
+</div>

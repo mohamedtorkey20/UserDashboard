@@ -1,0 +1,21 @@
+<div class="rounded-lg flex flex-col space-y-3">
+  @if (isLoading) { @for (skeleton of skeletonArray ; track $index) {
+
+  <app-skeleton-list-user></app-skeleton-list-user>
+  } }@else { @if (users.length === 0) {
+
+  <p>No users found</p>
+  } @for (user of users; track user.id) {
+
+  <app-user-card [user]="user"></app-user-card>
+  } }
+
+  <mat-paginator
+    [length]="totalUsers"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="[5, 10]"
+    (page)="onPageChange($event)"
+    aria-label="Select page"
+  >
+  </mat-paginator>
+</div>
