@@ -28,21 +28,21 @@ This project is an interactive user dashboard built with Angular (17), demonstra
 ## Installation
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/mohamedtorkey20/UserDashboard.git
-   \`\`\`
+   ```
 2. Navigate to the project directory:
-   \`\`\`bash
+   ```bash
    cd UserDashboard
-   \`\`\`
+  ```
 3. Install the dependencies:
-   \`\`\`bash
+  ```bash
    npm install
-   \`\`\`
+   ```
 4. Start the development server:
-   \`\`\`bash
+   ```bash
    ng serve
-   \`\`\`
+  ```
 5. Open your browser and go to \`http://localhost:4200\`.
 
 ## Usage
